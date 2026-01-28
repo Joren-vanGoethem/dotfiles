@@ -3,7 +3,7 @@
 ## packages
 
 ```bash
-paru -S brightnessctl playerctl ttf-jetbrains-mono-nerd btop
+paru -S brightnessctl playerctl ttf-jetbrains-mono-nerd btop vesktop
 ```
 
 ## TODO:
