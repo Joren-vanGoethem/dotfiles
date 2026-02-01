@@ -8,7 +8,8 @@
   // Choose the order of the modules
   "modules-left": [
     "hyprland/workspaces",
-    "custom/media"
+    "mpris"
+    // "custom/media"
   ],
   "modules-right": [
     "pulseaudio",
@@ -125,31 +126,18 @@
     "on-click": "pavucontrol",
     "on-click-middle": "$HOME/.config/hypr/apps/waybar/scripts/switch_audio_output.sh"
   },
-  "custom/media": {
-    "format": "{icon} {text}",
-    "return-type": "json",
-    "max-length": 200,
-    "on-click": "playerctl play-pause",
-    "format-icons": {
-      "spotify": "",
-      "firefox": "󰈹",
-      "default": "🎜"
-    },
-    "escape": true,
-    "exec": "$HOME/.config/hypr/apps/waybar/scripts/media-player.py --enable-logging -vvv 2>&1 | tee $HOME/.config/hypr/apps/waybar/scripts/media-player.log" // Script in resources folder
-  },
   "mpris": {
     "format": "{player_icon} {status_icon} {dynamic}",
     "format-paused": "{player_icon} {status_icon} {dynamic}",
     "tooltip-format": "{album}",
     "player-icons": {
       "default": "🎜",
-      "firefox": "󰈹",
+      "chromium": "",
       "spotify": ""
     },
     "status-icons": {
-      "playing": "",
-      "paused": ""
+      "paused": "",
+      "playing": ""
     },
     // "interval": 1,
     "dynamic-order": ["artist", "title"]

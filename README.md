@@ -58,6 +58,6 @@ git -C ~autocomplete pull
 
 ## TODO:
 
+- exec command for custom/power in waybar config
 - better keybinds like one for vscode or rider....
-- cpx ?
 - make sure all dotfiles are in this repo
