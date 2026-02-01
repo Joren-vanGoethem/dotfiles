@@ -30,6 +30,11 @@ git clone --depth 1 -- https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/z
 git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ~/.zsh/zsh-autocomplete
 ```
 
+to update, run:
+```sh
+git -C ~autocomplete pull
+```
+
 ## TODO:
 
 - zsh setup
