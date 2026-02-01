@@ -51,14 +51,13 @@ git -C ~autocomplete pull
 ```
 
 ### syntax-highlighting
-TODO
-### powerlevel10k
-TODO
+`paru -S zsh-syntax-highlighting`
 
+### powerlevel10k
+`paru -S zsh-theme-powerlevel10k-git`
 
 ## TODO:
 
 - better keybinds like one for vscode or rider....
-- fzf maybe
 - cpx ?
 - make sure all dotfiles are in this repo
