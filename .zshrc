@@ -3,6 +3,9 @@ HISTSIZE=5000
 SAVEHIST=5000
 bindkey -e
 
+# fix delete key on framework laptop
+bindkey "^[[3~" delete-char
+
 # The following lines were added by compinstall
 zstyle :compinstall filename '~/.zshrc'
 
