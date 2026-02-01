@@ -3,7 +3,18 @@
 ## packages
 
 ```bash
-paru -S brightnessctl playerctl ttf-jetbrains-mono-nerd btop
+paru -S \
+ brightnessctl \
+ playerctl \
+ ttf-jetbrains-mono-nerd \ btop \
+ zsh \
+ hyprpolkitagent \
+ starship \
+ visual-studio-code-bin \
+ wl-clipboard \
+ zoxide \
+ zsh \
+ zsh-theme-powerlevel10k \
 ```
 
 ## TODO:
