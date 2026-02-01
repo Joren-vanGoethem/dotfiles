@@ -22,8 +22,8 @@ autoload -Uz compinit && compinit
 # plugins
 source ~/.zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
-
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # theme
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
