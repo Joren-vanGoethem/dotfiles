@@ -1,7 +1,7 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: JetBrains Mono Nerd Font, FontAwesome, Hack;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: bold;
 }
 
@@ -107,7 +107,7 @@ window#waybar {
 #mpd {
     background-color: #2e3440;
     border-radius: 8px;
-    padding: 0 12px 0 12px;
+    padding: 0 8px 0 8px;
     margin: 5px 5px 5px 0;
 }
 
