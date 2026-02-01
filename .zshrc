@@ -25,6 +25,6 @@ eval "$(zoxide init --cmd cd zsh)"
 
 # env vars
 export EDITOR=nvim
-export LC_ALL=en_GB.UTF-8
+export LC_ALL=en_US.UTF-8
 
 source <(fzf --zsh)
