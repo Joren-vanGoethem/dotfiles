@@ -61,3 +61,4 @@ git -C ~autocomplete pull
 - exec command for custom/power in waybar config
 - better keybinds like one for vscode or rider....
 - make sure all dotfiles are in this repo
+- performance profile switcher in waybard with indicator
