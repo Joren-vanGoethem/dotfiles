@@ -15,7 +15,7 @@ if [[ ! $REPLY =~ ^[Yy]$ ]]; then
 	exit 1
 fi
 
-echo -e "Setting up config files..."
+echo -e "\nSetting up config files...\n"
 
 # for every file in .config/,
 # remove the file in ~/.config/
@@ -26,8 +26,19 @@ for file in .config/*; do
 	ln -s $(pwd)/$file ~/.config/$(basename $file)
 done
 
+echo -e "\nSetting up zsh plugin directory...\n"
+
+# zsh plugin directory
+for file in .zsh/*; do
+	rm -rf ~/.zsh/$(basename $file)
+	echo "Linking $file to ~/.zsh/$(basename $file)"
+	ln -s $(pwd)/$file ~/.zsh/$(basename $file)
+done
+
+echo -e "\nSetting up other dotfiles...\n"
+
 # do the same for specific files in .
-for file in .Xresources; do
+for file in .Xresources .zshrc; do
 	rm -rf ~/$file
 	echo "Linking $file to ~/$file"
 	ln -sf $(pwd)/$file ~/$file
