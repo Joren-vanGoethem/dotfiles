@@ -29,7 +29,7 @@ done
 echo -e "\nSetting up other dotfiles...\n"
 
 # do the same for specific files in .
-for file in .Xresources .zshrc; do
+for file in .Xresources .zshrc .p10k.zsh; do
 	rm -rf ~/$file
 	echo "Linking $file to ~/$file"
 	ln -sf $(pwd)/$file ~/$file
