@@ -7,7 +7,8 @@
 paru -S \
  brightnessctl \
  playerctl \
- ttf-jetbrains-mono-nerd \ btop \
+ ttf-jetbrains-mono-nerd \ 
+ btop \
  zsh \
  hyprpolkitagent \
  starship \
@@ -16,9 +17,7 @@ paru -S \
  zoxide \
  zsh \
  zsh-theme-powerlevel10k \
-=======
-paru -S brightnessctl playerctl ttf-jetbrains-mono-nerd btop vesktop
->>>>>>> dd1157f0a8cf3cacf057abcf78bbfc2adb6a9c4a
+ vesktop \
 ```
 
 ## TODO:
