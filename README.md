@@ -3,7 +3,6 @@
 ## packages
 
 ```bash
-<<<<<<< HEAD
 paru -S \
  brightnessctl \
  playerctl \
@@ -28,3 +27,5 @@ paru -S \
 - zsh-autosuggestions
 - zsh-autocomplete
 - fzf maybe
+- cpx ?
+- make sure all dotfiles are in this repo
