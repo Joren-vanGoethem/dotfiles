@@ -26,15 +26,6 @@ for file in .config/*; do
 	ln -s $(pwd)/$file ~/.config/$(basename $file)
 done
 
-echo -e "\nSetting up zsh plugin directory...\n"
-
-# zsh plugin directory
-for file in .zsh/*; do
-	rm -rf ~/.zsh/$(basename $file)
-	echo "Linking $file to ~/.zsh/$(basename $file)"
-	ln -s $(pwd)/$file ~/.zsh/$(basename $file)
-done
-
 echo -e "\nSetting up other dotfiles...\n"
 
 # do the same for specific files in .

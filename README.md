@@ -19,6 +19,17 @@ paru -S \
  vesktop \
 ```
 
+## ZSH setup
+
+clone plugins to correct location
+```sh
+git clone --depth 1 -- https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+```
+
+```sh
+git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ~/.zsh/zsh-autocomplete
+```
+
 ## TODO:
 
 - zsh setup

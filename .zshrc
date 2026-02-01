@@ -10,8 +10,8 @@ autoload -Uz compinit && compinit
 # End of lines added by compinstall
 
 # plugins
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
-source ~/.zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+source ~/.zsh/zsh-autocomplete/zsh-autocomplete.zsh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # aliases
 source ~/.aliases
