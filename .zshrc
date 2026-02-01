@@ -14,7 +14,7 @@ source ~/.zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 
 # aliases
-source ~/.aliases
+# source ~/.aliases
 
 # loads zsh styling
 eval "$(starship init zsh)"
