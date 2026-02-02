@@ -30,7 +30,15 @@ paru -S \
  ttf-jetbrains-mono-nerd \ 
  btop \
  starship \
+ unzip \
 ```
+
+### Rust
+`curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
+
+### Bun
+`unzip` is required for this to work
+`curl -fsSL https://bun.sh/install | bash`
 
 ### Power profiles with Tuned
 `paru -S tuned`  
