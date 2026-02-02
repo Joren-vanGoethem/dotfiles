@@ -3,6 +3,7 @@
     font-family: JetBrains Mono Nerd Font, FontAwesome, Hack;
     font-size: 12px;
     font-weight: bold;
+    min-height: 0; /* slightly decreases top bar height*/
 }
 
 window#waybar {
@@ -12,6 +13,8 @@ window#waybar {
     transition-duration: .5s;
     border: none;
     border-radius: 0;
+    font-size: 12px;  /* Decrease font size */
+    min-height: 0;    /* Remove minimum height constraint */
 }
 
 /**************/
@@ -20,8 +23,7 @@ window#waybar {
 
 #workspaces {
     border-radius: 8px;
-    padding: 0 3px 0 8px;
-    /* 3+5 = total of 8px of space between the workspaces and the media module*/
+    padding: 0 5px 0 5px;
     margin: 5px 5px 5px 0;
     transition: all 0.2s ease;
 }
@@ -40,7 +42,8 @@ window#waybar {
     /* center the icon, no clue why this is necessary */
     padding-left: 5px;
     padding-right: 10px;
-    padding-top: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 /* the first and last buttons should be rounded */
@@ -92,7 +95,7 @@ window#waybar {
 #clock,
 #custom-date,
 #battery,
-#cpu,
+#custom-cpu-tuned,
 #memory,
 #disk,
 #temperature,
@@ -108,7 +111,12 @@ window#waybar {
     background-color: #2e3440;
     border-radius: 8px;
     padding: 0 8px 0 8px;
-    margin: 5px 5px 5px 0;
+    margin: 3px 3px 0px 0;
+}
+
+#custom-cpu-tuned button {
+    padding: 0px;
+    margin: 0px;
 }
 
 #custom-power {
@@ -165,10 +173,6 @@ window#waybar {
 
 label:focus {
     background-color: black;
-}
-
-#cpu {
-    color: #bf616a;
 }
 
 #memory {
@@ -230,8 +234,6 @@ label:focus {
     background-color: #AA5CC3;
 }
 
-
-
 #temperature {
     color: #d08770;
 }
@@ -253,60 +255,12 @@ label:focus {
     background-color: #bf616a;
 }
 
-/* #idle_inhibitor {
-    background-color: #2d3436;
-} */
-
-/* #idle_inhibitor.activated {
-    background-color: #ecf0f1;
-    color: #2d3436;
-} */
-
-/* #mpd {
-    background-color: #66cc99;
-    color: #2a5c45;
+#custom-cpu-tuned.powersave {
+    /* background-color: #a3be8c; */
+    color: #63b75e;
 }
 
-#mpd.disconnected {
-    background-color: #bf616a;
+#custom-cpu-tuned.desktop {
+    /* background-color: #b48ead; */
+    color: #bf616a;
 }
-
-#mpd.stopped {
-    background-color: #90b1b1;
-}
-
-#mpd.paused {
-    background-color: #51a37a;
-} */
-
-/* #language {
-    background: #00b093;
-    color: #740864;
-    padding: 0 5px;
-    margin: 0 5px;
-    min-width: 16px;
-} */
-
-/* #keyboard-state {
-    background: #97e1ad;
-    color: black;
-    padding: 0 0px;
-    margin: 0 5px;
-    min-width: 16px;
-}
-
-#keyboard-state > label {
-    padding: 0 5px;
-}
-
-#keyboard-state > label.locked {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad.empty {
-	background-color: transparent;
-} */

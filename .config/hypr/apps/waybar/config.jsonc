@@ -14,7 +14,7 @@
   "modules-right": [
     "pulseaudio",
     "battery",
-    "cpu",
+    "custom/cpu-tuned",
     "memory",
     "temperature",
     "network",
@@ -57,11 +57,18 @@
     "interval": 1,
     "tooltip": false
   },
-  "cpu": {
-    "format": " {usage:2}%",
-    "tooltip": true,
+  // "cpu": {
+  //   "format": " {usage:2}%",
+  //   "tooltip": true,
+  //   "interval": 1,
+  //   "on-click": "tuned-gui"
+  // },
+  "custom/cpu-tuned": {
+    "exec": "~/.config/hypr/apps/waybar/scripts/tuned_status.sh",
+    "return-type": "json",
     "interval": 1,
-    "on-click": "tuned-gui"
+    "on-click": "~/.config/hypr/apps/waybar/scripts/tuned_profile_cycler.sh",
+    "format": " {} "
   },
   "memory": {
     "format": " {:2}%",
@@ -145,7 +152,7 @@
   },
   "custom/power": {
     "format": "⏻",
-    "on-click": "~/.config/rofi/powermenu/type-4/powermenu.sh",
+    // "on-click": "~/.config/rofi/powermenu/type-4/powermenu.sh",
   },
   "custom/notification": {
     "tooltip": false,

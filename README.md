@@ -32,6 +32,25 @@ paru -S \
  starship \
 ```
 
+### Power profiles with Tuned
+`paru -S tuned`  
+`chmod +x ~/.config/hypr/apps/waybar/scripts/tuned_profile_cycler.sh`  
+`chmod +x ~/.config/hypr/apps/waybar/scripts/tuned_status.sh`
+
+to avoid password prompts setup passwordless profile switching
+
+edit `/etc/polkit-1/rules.d/50-tuned.rules`
+
+add following content:
+```js
+polkit.addRule(function(action, subject) {
+    if (action.id == "org.freedesktop.tuned.profile" &&
+        subject.isInGroup("wheel")) {
+        return polkit.Result.YES;
+    }
+});
+```
+
 ## ZSH setup
 
 ### autosuggestions
