@@ -13,8 +13,6 @@ window#waybar {
     transition-duration: .5s;
     border: none;
     border-radius: 0;
-    font-size: 12px;  /* Decrease font size */
-    min-height: 0;    /* Remove minimum height constraint */
 }
 
 /**************/
