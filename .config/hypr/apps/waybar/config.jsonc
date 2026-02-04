@@ -52,9 +52,9 @@
   },
   "custom/date": {
     "timezone": "Europe/Brussels",
-    "exec": "date +'%a %Y-%m-%d'",
+    "exec": "date +'%a %d-%m-%Y'",
     "format": "󰃭 {}",
-    "interval": 1,
+    "interval": 5,
     "tooltip": false
   },
   // "cpu": {
