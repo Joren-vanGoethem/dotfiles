@@ -83,6 +83,9 @@ git -C ~autocomplete pull
 ### powerlevel10k
 `paru -S zsh-theme-powerlevel10k-git`
 
+### remap caps lock to delete
+the `input.conf` file contains the path to the xkb override. this needs an absolute path so update this to your user's correct home directory.
+
 ## TODO:
 
 - exec command for custom/power in waybar config
